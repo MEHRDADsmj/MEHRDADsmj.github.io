@@ -50,6 +50,44 @@
               <div class="col-md-12">
 
               <p>
+                ShEd, named after the phrase "Shader Editor", is a simple and lightweight shader editing tool used for creating basic GLSL shaders and exporting
+                them as .glsl files.<br>
+                Despite the wide timespan of the commits on git, ShEd was made during a small amount of time. It utilizes easy-to-use interface with almost no
+                prerequisites, so shader enthusiasts can just run the program and start writing shaders.
+              </p>
+              </div>
+            </div>
+            <br><br>
+            <h2>Technical Overview</h2>
+            <div class="row">
+              <div class="col-md-12">
+              <p>
+                Originally created as a university project, ShEd uses Qt framework to provide the users with easy-to-use UI, understandable source code, and maximmum
+                performance.<br>
+                ShEd makes good use of Qt's famous "Signals & Slots" to allow the program to broadcast events with maximmum speed and reliablity, also 
+                making it super easy to extend and develop. UI and core modules work in a layered architecture, while the core itself and shader compiling process is
+                implemented in a linear manner to achieve the best compiling and error detection speed.<br>
+                ShEd uses GLSL shaders, which is the standard shading language for OpenGL and almost every GPU available on the market. Shaders made using ShEd can 
+                be easily modified to be used in game engines such as Unity and Unreal Engine. With the efficiency of ShEd, you can easily detect the performance-heavy
+                parts of the shader without worrying that if it is the shader or the program which is lagging.<br>
+                ShEd also provides its users with an FPS counter to show how performant their shaders are and helps detecting syntax errors using its "On-Compile Error Detection"
+                which is almost performing as good as a real time error detection system.<br>
+                In the benchmarks performed by myself comparing ShEd and SHADERed, a similar shader editing app, running shader "Cube", which is available in the samples
+                directory in github, ShEd performed around 6-7% faster than its competitor. ShEd also requires no preconfig or setup to start creating a shader for beginners,
+                making it relatively easier for those who want to start learning shader programming or just want to make quick edits to their code.<br>
+                ShEd supports file extensions such as .txt, .glsl, and .shader and can export files as .glsl and .shader . ShEd supports OpenGL 3.3 and later and works
+                using vertex and fragment (pixel) shaders.
+              </p>
+              </div>
+            </div>
+            <br><br>
+            <h2>Download and get shaded!</h2>
+            <div class="row">
+              <div class="col-md-12">
+              <p>
+                You can get the source code and the builded project from the link below. Make sure to star the repository if it was any help for you in either starting 
+                your shader editing journey or learning Qt!<br>
+                <a href="https://drive.google.com/drive/folders/1NBaoIfPUTdMAbiUDuaR8YCmvazgTqlt2?usp=sharing" target="_blank">GET SHADED!</a>
               </p>
               </div>
             </div>
